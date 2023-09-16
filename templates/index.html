@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/index.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/global.css')}}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="main">
+        <div id="logo-image-box">
+          <img
+            src="{{url_for('static',filename='사우회로고.png')}}"
+            alt="로고"
+          />
+        </div>
+        <div>
+          <div id="sauhoe3cut">사우회 세컷</div>
+          <div id="start-button">
+            <a href="/count"><button>시작하기</button></a>
+            <!-- <button><a href="">시작하기</a></button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

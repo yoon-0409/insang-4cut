@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: #d9d9d9;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#select-img-box {
+  /* width: 200px; */
+  background-color: navajowhite;
+  height: 80vh;
+  /* width: auto; */
+  position: relative;
+  margin: 50px;
+}
+#select-img-box * {
+  position: absolute;
+  width: 10%;
+}
+#frame-img {
+  /* width: 100%; */
+  height: 100%;
+}
+#main {
+  width: 1000px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#first-line {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#first-line img {
+  width: 300px;
+  height: 200px;
+}
+
+#sec-line {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#sec-line img {
+  width: 300px;
+  height: 200px;
+}
+.selected {
+  filter: brightness(0.7); /* 0.5는 어둡게 만들 정도를 나타냅니다. */
+}
+
+#done {
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+}

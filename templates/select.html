@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/select.css')}}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="select-img-box">
+        <img
+          id="frame-img"
+          src="{{url_for('static',filename='frame/인생세컷프레임검은색.png')}}"
+          alt=""
+        />
+        <img src="{{url_for('static',filename='/image/1.png')}}" alt="" />
+        <img src="{{url_for('static',filename='/image/2.png')}}" alt="" />
+        <img src="{{url_for('static',filename='/image/3.png')}}" alt="" />
+      </div>
+      <div id="main">
+        <div id="first-line">
+          <img
+            src="{{url_for('static',filename='/image/1.png')}}"
+            alt=""
+            id="img1"
+            class="img"
+          />
+          <img
+            src="{{url_for('static',filename='/image/2.png')}}"
+            alt=""
+            id="img2"
+            class="img"
+          />
+          <img
+            src="{{url_for('static',filename='/image/3.png')}}"
+            alt=""
+            id="img3"
+            class="img"
+          />
+        </div>
+        <div id="logo">사우회 세컷</div>
+        <div id="sec-line">
+          <img
+            src="{{url_for('static',filename='./image/4.png')}}"
+            alt=""
+            id="img4"
+            class="img"
+          />
+          <img
+            src="{{url_for('static',filename='./image/5.png')}}"
+            alt=""
+            id="img5"
+            class="img"
+          />
+          <img
+            src="{{url_for('static',filename='./image/6.png')}}"
+            alt=""
+            id="img6"
+            class="img"
+          />
+        </div>
+        <div id="select-complete">
+          <button id="done">선택완료</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="{{url_for('static',filename='js/select.js')}}"></script>
+</html>

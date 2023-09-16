@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="{{url_for('static',filename='css/frame.css')}}"
+  />
+  <body>
+    <div id="container">
+      <div id="main">
+        <div id="first">
+          <div id="frame-img-box">
+            <img
+              id="frame-3cut-img"
+              src="{{url_for('static',filename='frame/인생세컷프레임검은색.png')}}"
+              alt="프레임"
+            />
+            <div id="photo-box">
+              <img
+                id="img1"
+                src="{{url_for('static',filename='image/1.png')}}"
+                alt="이미지1"
+              />
+              <img
+                id="img2"
+                src="{{url_for('static',filename='image/2.png')}}"
+                alt="이미지2"
+              />
+              <img
+                id="img3"
+                src="{{url_for('static',filename='image/3.png')}}"
+                alt="이미지3"
+              />
+            </div>
+          </div>
+          <div id="color-box">
+            <div class="color" data="black" id="color1"></div>
+            <div class="color" data="grey" id="color2"></div>
+            <div class="color" data="blue" id="color3"></div>
+            <div class="color" data="red" id="color4"></div>
+          </div>
+        </div>
+        <div id="button-box"><button id="frame-select">선택완료</button></div>
+      </div>
+    </div>
+    <div id="loading" class="hidden">
+      <div>인쇄중입니다.</div>
+    </div>
+  </body>
+  <script src="{{url_for('static',filename='js/frame.js')}}"></script>
+</html>

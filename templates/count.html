@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/global.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/count.css')}}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="count-main">
+      <div id="top-bar">
+        <div id="sauhoe-3cut">사우회 세컷</div>
+        <div id="top-line"></div>
+      </div>
+      <form action="/fivesec" id="count-form" method="get">
+        <div id="box1">
+          <input
+            type="text"
+            value=""
+            id="count-input"
+            name="count-input"
+            readonly
+          />
+          <div id="plus-minus">
+            <button id="increase">+</button>
+            <button id="decrease">-</button>
+          </div>
+        </div>
+        <input type="submit" value="다음" id="count-submit-box" />
+      </form>
+    </div>
+  </body>
+  <script src="/static/js/count.js"></script>
+</html>
